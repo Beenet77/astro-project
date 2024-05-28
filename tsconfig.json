@@ -1,0 +1,6 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "typeRoots": ["node_modules/solid-js/types"]
+  }
+}
