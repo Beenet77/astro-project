@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Header";
 import PokemonCard from "./PokemonCard";
 import SearchBar from "./SearchBar";
 
@@ -20,7 +19,7 @@ const PokemonList = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Initial data:", data); // Debug log
+        console.log("Initial data:", data);
 
         const results = await Promise.all(
           data.results.map(async (pokemon) => {
@@ -37,11 +36,11 @@ const PokemonList = () => {
           })
         );
 
-        console.log("Fetched Pokémon data:", results); // Debug log
+        console.log("Fetched Pokemon data:", results);
         setPokemonList(results);
         setFilteredPokemonList(results);
       } catch (error) {
-        console.error("Error fetching Pokémon data:", error);
+        console.error("Error fetching Pokemon data:", error);
       }
     };
     fetchPokemon();
@@ -70,7 +69,6 @@ const PokemonList = () => {
 
   return (
     <div>
-      <Header />
       <div className="container mx-auto mt-8">
         <SearchBar onSearch={handleSearch} />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

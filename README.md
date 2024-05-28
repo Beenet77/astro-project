@@ -1,54 +1,52 @@
-# Astro Starter Kit: Basics
+# Pokemon Search Application
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is a simple web application built with Astro, React, and Tailwind CSS that allows users to search for Pokemon and view details about them. Users can search for Pokemon by name and navigate through paginated results.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Search for Pokemon by name
+- View list Pokemon
+- Pagination for browsing through multiple Pokemon
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Technologies Used
 
-## 🚀 Project Structure
+- [Astro](https://astro.build/)
+- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- JavaScript (ES6+)
+- HTML5
 
-Inside of your Astro project, you'll see the following folders and files:
+## Getting Started
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+To get a local copy of the project up and running, follow these steps:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. Clone the repository:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+   ```bash
+   git clone https://github.com/Beenet77/astro-project
+   ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+2. Navigate into the project directory:
 
-## 🧞 Commands
+   ```bash
+   cd pokemon-search-app
+   ```
 
-All commands are run from the root of the project, from a terminal:
+3. Install dependencies:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+   ```bash
+   npm install
+   ```
 
-## 👀 Want to learn more?
+4. Start the development server:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+   ```bash
+     npm start
+   ```
+
+5. Open your browser and visit http://localhost:4321 to view the application.
+
+## Usage
+
+- Enter a Pokemon name in the search bar to search for specific Pokemon.
+- Click on the pagination buttons to navigate through different pages of Pokemon.

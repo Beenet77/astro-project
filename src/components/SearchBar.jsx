@@ -15,7 +15,7 @@ const SearchBar = ({ onSearch }) => {
         type="text"
         value={searchValue}
         onChange={handleInputChange}
-        placeholder="Search for a Pokémon..."
+        placeholder="Search for a Pokemon..."
         className="px-4 py-2 border border-gray-300 rounded-l-md w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <button
